@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/warpcontent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+ <!-- 第一行展示框 -->
+    <HorizontalScrollView 
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:padding="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/number0"
+            android:textSize="40sp" />
+    </HorizontalScrollView >
+    
+ <!-- 第一行展示框 结束-->
+  <TextView
+            android:id="@+id/resultText0"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text=""
+            />
+ <!-- 第二行数字789往右移动清除 -->
+
+    <TableLayout
+        android:id="@+id/buttonTable01"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:stretchColumns="*"
+         >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/number7" />
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/number8" />
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/number9" />
+            <Button
+                android:id="@+id/buttonBackSpace"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/backspace" />
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/clear" />
+           </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/number4" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/number5" />
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/number6" />
+            <Button
+                android:id="@+id/buttonMultiply"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/multiply" />
+            <Button
+                android:id="@+id/buttonDivide"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:onClick="onClickListener"
+                android:text="@string/divide" />
+        </TableRow>
+    </TableLayout>
+    
+    <!-- 第四五行123+-=号 -->
+
+    <LinearLayout
+        android:id="@+id/buttonLinear01"
+        android:layout_width="wrap_content"
+        android:layout_height="176dp"
+        android:orientation="horizontal" >
+        
+       <!-- 第四行123+-号 --> 
+        <TableLayout
+            android:id="@+id/buttonTable02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+             >
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp"
+                    android:onClick="onClickListener"
+                    android:text="@string/number1" />
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp"
+                    android:onClick="onClickListener"
+                    android:text="@string/number2" />
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp"
+                    android:onClick="onClickListener"
+                    android:text="@string/number3" />
+		         <Button
+		            android:id="@+id/buttonPlus"
+		            android:layout_width="64dp"
+		            android:layout_height="80dp"
+		            android:onClick="onClickListener"
+		            android:text="@string/plus" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+                <Button
+                    android:id="@+id/button0"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp"
+                    android:onClick="onClickListener"
+                    android:text="@string/number0" />
+                <Button
+                    android:id="@+id/buttonDot"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp"
+                    android:onClick="onClickListener"
+                    android:text="@string/dot" />
+                <Button
+                    android:id="@+id/buttonNegSign"
+                    android:layout_width="64dp"
+                    android:layout_height="80dp"
+                    android:onClick="onClickListener"
+                    android:text="@string/negSign" />
+                <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="64dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:text="@string/minus" />
+            </TableRow>
+        </TableLayout>
+        
+  <!-- 右下角部分加号等号 -->
+             <Button
+                android:id="@+id/buttonEval"
+                android:layout_width="64dp"
+                android:layout_height="160dp"
+                
+                android:onClick="onClickListener"
+                android:text="@string/eval" />
+ 
+  <!-- 结束 -->      
+    </LinearLayout>
+</LinearLayout>
